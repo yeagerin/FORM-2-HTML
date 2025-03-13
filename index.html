@@ -3,9 +3,60 @@
 	<head>
 		<meta name="author" content="Ririn Safitri">
 		<title>Form HTML</title>
+		<style>
+			body{ 
+				
+				background-image: url("caat.jpg");
+				background-size: cover;
+			}
+			h1{
+				color: #eeddd3;
+				text-align: center;
+				font-size: 50px;
+			}
+			/*.h1-warna{
+				color: lightblue;
+			}*/
+			/*#text-kuning{
+				color: yellow;
+			}*/
+			table{
+				background-color: #eeddd3;
+				opacity: 85%;
+			}
+			textarea, select, input[type="text"], [type="email"], [type="date"], [type="number"], [type="file"]{
+				border-radius: 20px;
+				background-color: lightpink;
+				color:pink;
+				padding: 6px;
+				width: 80%;
+				border-color: white;
+			}
+			*{
+				color: black;
+				font-family: cursive; 
+			}
+			.button{
+				background-color: lightpink;
+				padding= 15px;
+				font-weight: bold;
+				border-radius: 20px;
+				border-color: white;
+			}
+			.button:hover{
+				background-color: lightpink;
+				padding= 15px;
+				font-weight: bold;
+				border-radius: 20px;
+				border-color: white;
+				color: white;
+			}
+		</style>
 	</head>
 	<body>
 	<h1>Form Pendaftaran</h1>
+	<!-- <h1 class="h1-warna">Data Mahasiswa</h1>
+	<h1 id = "text-kuning">Data Mahasiswa</h1> -->
 		<form method="" action="">
 		<table width="100%">
 		<tr>
@@ -23,7 +74,7 @@
 				<tr>
 					<td><label for="email">Email</label></td>
 					<td>:</td>
-					<td><input type="number" name="email" id="email"></td>
+					<td><input type="email" name="email" id="email"></td>
 				</tr>
 				<tr>
 					<td><label for="notelepon">Nomor Telepon</label></td>
@@ -131,8 +182,8 @@
 					<td><input type="number" name="noteleponibu" id="noteleponibu"></td>
 				</tr>
 				<tr>
-					<td colspan="2"><input type="submit" value="Simpan">
-					<input type="Reset"></td>
+					<td colspan="2"><input class="button" type="submit" value="Simpan">
+					<input class="button" type="Reset"></td>
 				</tr>
 		</form>
 		</table>
